@@ -2,8 +2,8 @@
 const template = document.createElement('template');
 template.innerHTML = `
 <div id="give-menu">
-        <img src="https://1s712.americanbible.org/global/_ABSLogo/White/PNG/abs-bible-mark-(white).png">
-        <a href="" target="_blank" class="give-btn">GIVE NOW >></a>
+        <a href="https://armedservicesministry.org/"><img src="https://1s712.americanbible.org/global/_ABSLogo/White/PNG/abs-bible-mark-(white).png"></a>
+        <a href="" target="_blank" class="give-btn">GIVE NOW <i class="arrow right"></i><i class="arrow right"></i></a>
 </div>
 
 <div id="asm-super-menu" style="background: #ebe6e4;">
@@ -20,18 +20,19 @@ template.innerHTML = `
     <div class="asm-super-menu__nav">
         <a class="asm-super-menu__link" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website">Armed Services Ministry</a>
         <a class="asm-super-menu__link" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website">Journey of a Military Wife</a>
-        <a class="asm-super-menu__link" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad">Hero Squad</a>
+        <a class="asm-super-menu__link" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website">Hero Squad</a>
         <a class="asm-super-menu__link" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website">God Understands</a>
         <a class="asm-super-menu__link" data-id="mbc" href="https://www.militarybiblechallenge.net" title="Military Bible Challenge Website">Military Bible Challenge</a>
         <a class="asm-super-menu__link" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website">NEVER ALONE</a>
     </div>
 </div>
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 #give-menu{
 	background: #002c47;
     height:27px;
     padding: 5px 2.5%;
+    font-family: 'Open Sans', sans-serif;
 }
 #give-menu img{
 	height: 20px;
@@ -45,31 +46,40 @@ template.innerHTML = `
 	font-size: 12px;
 	float: right;
 	height: 37px;
-	line-height: 37px;
-	margin: -5px;
-	padding: 0 10px;
-	font-family: arial;
-	font-weight: bold;
+    line-height: 37px;
+    margin-top: -5px;
+    padding: 0 25px;
+    text-decoration: none;
+    letter-spacing: .5px;
+    transition: all .25s ease;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+#give-menu .give-btn:hover, #give-menu img:hover {
+    transform: scale(1.05);
 }
 #asm-super-menu {
 	background: #ebe6e4;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
     color: #0f2128;
     height: 50px;
 }
 .asm-super-menu__nav {
-	display: flex;
+    display: flex;
+    position: relative;
+    z-index: 999999999999999999;
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
     overflow: hidden;
 }
 .asm-super-menu__nav .asm-super-menu__link,  .asm-super-menu__controls a{
-    height: 32.5px;
+    height: 35px;
     font-size: 15px;
-    padding: 17.5px 15px 0;
+    padding: 15px 25px 0;
     color: #002c47;
     text-decoration: none;
     letter-spacing: .5px;
@@ -115,12 +125,27 @@ template.innerHTML = `
     -webkit-transform: rotate(-135deg);
     margin-top: 5px;
 }
-
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left: 1px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    margin-bottom: 1.5px;
+  }
+@media (max-width: 1540px){
+    .asm-super-menu__nav .asm-super-menu__link,  .asm-super-menu__controls a{
+        padding: 15px 15px 0;
+    }
+}
 @media(max-width: 1405px){
     .asm-super-menu__nav .asm-super-menu__link, .asm-super-menu__controls a {
-        height: 31px;
+        height: 24px;
         font-size: 12px;
-        padding: 19px 10px 0;
+        padding: 12px 10px 0;
+    }
+    #asm-super-menu {
+        height: 36px;
     }
     .asm-super-menu__nav {
         padding: 0 2.5%;
