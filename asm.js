@@ -306,6 +306,7 @@ class Supermenu extends HTMLElement {
         const na = this.shadowRoot.querySelector('[data-id=na]');
         const asm_default = this.shadowRoot.querySelector('[data-id=asm]');
         const donate_btn = this.shadowRoot.querySelector('.give-btn');
+        const give_menu = this.shadowRoot.querySelector('#give-menu');
         switch (this.getAttribute('site')) {
             case 'asm':
                 asm.classList.add('active');
@@ -318,6 +319,7 @@ class Supermenu extends HTMLElement {
             case 'hs':
                 hs.classList.add('active');
                 donate_btn.setAttribute('href', 'https://myherosquad.org/donate/?banner=ABS2020-10-001-ASM&pid=1001&des=582a68bf-9f56-4403-aaaf-c57d286b31b4&Source=ASM_HShome');
+                give_menu.style.display = 'none';
                 break;
             case 'mbc':
                 mbc.classList.add('active');
