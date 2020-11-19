@@ -222,6 +222,7 @@ template.innerHTML = `
 @media (max-width: 1100px) {
   .asm-super-menu__nav {
     opacity: 0;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
