@@ -27,149 +27,231 @@ template.innerHTML = `
     </div>
 </div>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-#give-menu{
-	background: #002c47;
-    height:27px;
-    padding: 5px 2.5%;
-    font-family: 'Open Sans', sans-serif;
-}
-#give-menu img{
-	height: 20px;
-	margin-top: 3px;
-	margin-bottom: -3px;	
-}
-#give-menu .give-btn{
-	background: #a90d1c;
-	color: #fff;
-	text-decoration: none;
-	font-size: 12px;
-	float: right;
-	height: 37px;
-    line-height: 37px;
-    margin-top: -5px;
-    padding: 0 25px;
-    text-decoration: none;
-    letter-spacing: .5px;
-    transition: all .25s ease;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all .5s ease-in-out;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+#give-menu {
+  background: #002c47;
+  height: 27px;
+  padding: 5px 2.5%;
+  font-family: 'Open Sans', sans-serif; }
+
+#give-menu img {
+  height: 20px;
+  margin-top: 3px;
+  margin-bottom: -3px; }
+
+#give-menu .give-btn {
+  background: #a90d1c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  float: right;
+  height: 37px;
+  line-height: 37px;
+  margin-top: -5px;
+  padding: 0 25px;
+  text-decoration: none;
+  letter-spacing: .5px;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  transition: all .25s ease;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
 #give-menu .give-btn:hover, #give-menu img:hover {
-    transform: scale(1.05);
-}
+  -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05); }
+
 #asm-super-menu {
-	background: #ebe6e4;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	text-transform: uppercase;
-    color: #0f2128;
-    height: 50px;
-}
+  background: #ebe6e4;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0f2128;
+  height: 50px; }
+
 .asm-super-menu__nav {
-    display: flex;
-    position: relative;
-    z-index: 999999999999999999;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    overflow: hidden;
-}
-.asm-super-menu__nav .asm-super-menu__link,  .asm-super-menu__controls a{
-    height: 35px;
-    font-size: 15px;
-    padding: 15px 25px 0;
-    color: #002c47;
-    text-decoration: none;
-    letter-spacing: .5px;
-    transition: all .25s ease;
-    cursor: pointer;
-}
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 999999999999999999;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5%;
+  overflow: hidden; }
+
+.asm-super-menu__nav .asm-super-menu__link, .asm-super-menu__controls a {
+  height: 35px;
+  font-size: 15px;
+  padding: 15px 25px 0;
+  color: #002c47;
+  text-decoration: none;
+  letter-spacing: .5px;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  transition: all .25s ease;
+  cursor: pointer; }
+
 .asm-super-menu__nav .asm-super-menu__link:hover, .active {
-    background: #dcaf38;
-    color: white;
-}
+  background: #dcaf38;
+  color: white; }
+
 .asm-super-menu__controls {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5%;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-}
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5%;
+  overflow: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
 .asm-super-menu__controls a#mbnavclose {
-    display: none;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+  display: none;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
 .asm-super-menu__controls a#showmbnav {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
 .arrow {
-    border: solid #002c47;
-    border-width: 0 2px 2px 0;
-    display: inline-flex;
-    padding: 2px;
-    margin-left: 8px;
-}
+  border: solid #002c47;
+  border-width: 0 2px 2px 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 2px;
+  margin-left: 8px; }
+
 .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-top: 3px;
-}
+  -moz-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+       transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-top: 3px; }
+
 .up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    margin-top: 5px;
-}
+  -moz-transform: rotate(-135deg);
+   -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+       transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-top: 5px; }
+
 .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    margin-left: 1px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    margin-bottom: 1.5px;
-  }
-@media (max-width: 1540px){
-    .asm-super-menu__nav .asm-super-menu__link,  .asm-super-menu__controls a{
-        padding: 15px 15px 0;
-    }
-}
-@media(max-width: 1405px){
-    .asm-super-menu__nav .asm-super-menu__link, .asm-super-menu__controls a {
-        height: 24px;
-        font-size: 12px;
-        padding: 12px 10px 0;
-    }
-    #asm-super-menu {
-        height: 36px;
-    }
-    .asm-super-menu__nav {
-        padding: 0 2.5%;
-    }
-}
-@media(max-width: 1100px){
-    .asm-super-menu__nav {
-        opacity: 0;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1% 5%;
-        background: #ebe6e4;
-        border-top: 2px inset rgba(15, 33, 40, .05);
-        transition: all ease-in-out .5s;
-    }
-    .asm-super-menu__controls {
-        display: flex;
-    }
-    .asm-super-menu__nav .asm-super-menu__link:hover, .active {
-        color: #dcaf38;
-        background: none;
-        transform: scale(1.05);
-    }
-}
+  -moz-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+       transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 1px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  margin-bottom: 1.5px; }
+
+@media (max-width: 1540px) {
+  .asm-super-menu__nav .asm-super-menu__link, .asm-super-menu__controls a {
+    padding: 15px 15px 0; } }
+
+@media (max-width: 1405px) {
+  .asm-super-menu__nav .asm-super-menu__link, .asm-super-menu__controls a {
+    height: 24px;
+    font-size: 12px;
+    padding: 12px 10px 0; }
+  #asm-super-menu {
+    height: 36px; }
+  .asm-super-menu__nav {
+    padding: 0 2.5%; } }
+
+@media (max-width: 1100px) {
+  .asm-super-menu__nav {
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1% 5%;
+    background: #ebe6e4;
+    border-top: 2px inset rgba(15, 33, 40, 0.05);
+    -webkit-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s; }
+  .asm-super-menu__controls {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .asm-super-menu__nav .asm-super-menu__link:hover, .active {
+    color: #dcaf38;
+    background: none;
+    -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+         -o-transform: scale(1.05);
+            transform: scale(1.05); } }
 </style>
 
 `;
@@ -227,7 +309,7 @@ class Supermenu extends HTMLElement {
                 break;
             case 'jmw':
                 jmw.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home');
+                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_JMW');
                 break;
             case 'hs':
                 hs.classList.add('active');
