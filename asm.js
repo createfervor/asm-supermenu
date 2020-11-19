@@ -27,12 +27,16 @@ template.innerHTML = `
     </div>
 </div>
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+:host {
+  all: initial;
+  font-family: sans-serif;
+}
 #give-menu {
   background: #002c47;
   height: 27px;
   padding: 5px 2.5%;
-  font-family: 'Open Sans', sans-serif; }
+  font-weight: 400;
+  font-family: sans-serif; }
 
 #give-menu img {
   height: 20px;
@@ -56,7 +60,6 @@ template.innerHTML = `
   -moz-transition: all .25s ease;
   transition: all .25s ease;
   cursor: pointer;
-  font-weight: bold;
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
@@ -71,8 +74,8 @@ template.innerHTML = `
 
 #asm-super-menu {
   background: #ebe6e4;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   color: #0f2128;
   height: 50px; }
