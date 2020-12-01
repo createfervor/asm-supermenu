@@ -2,7 +2,7 @@
 const template = document.createElement('template');
 template.innerHTML = `
 <div id="give-menu">
-        <a href="https://americanbible.org/" class="abs-logo"><img src="https://armedservicesministry.org/wp-content/uploads/2020/02/abs.png"></a>
+        <a href="https://americanbible.org/" target="_blank" class="abs-logo"><img src="https://1s712.americanbible.org/global/_ABSLogo/White/PNG/abs-bible-mark-(white).png"></a>
         <a href="" target="_blank" class="give-btn">GIVE NOW <i class="arrow right"></i><i class="arrow right"></i></a>
 </div>
 
@@ -19,7 +19,7 @@ template.innerHTML = `
     </div>
     <div class="asm-super-menu__nav desktop">
         <a class="asm-super-menu__link logo-asm" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website" alt="Armed Services Ministry Website"><span></span></a>
-        <a class="asm-super-menu__link logo-mbc" data-id="mbc" href="https://www.militarybiblechallenge.net" title="Military Bible Challenge Website" alt="Military Bible Challenge Website"><span></span></a>
+        <a class="asm-super-menu__link logo-mbc" data-id="mbc" href="https://www.militarybiblechallenge.net" target="_blank" title="Military Bible Challenge Website" alt="Military Bible Challenge Website"><span></span></a>
         <a class="asm-super-menu__link logo-gu" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website" alt="God Understands Website" ><span></span></a>
         <a class="asm-super-menu__link logo-hs" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website" alt="Hero Squad Website"><span></span></a>
         <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span></span></a>
@@ -27,7 +27,7 @@ template.innerHTML = `
     </div>
     <div class="asm-super-menu__nav  mobile">
         <a class="asm-super-menu__link" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website">Armed Services Ministry</a>
-        <a class="asm-super-menu__link" data-id="mbc" href="https://www.militarybiblechallenge.net" title="Military Bible Challenge Website">Military Bible Challenge</a>
+        <a class="asm-super-menu__link" data-id="mbc" href="https://www.militarybiblechallenge.net" target="_blank" title="Military Bible Challenge Website">Military Bible Challenge</a>
         <a class="asm-super-menu__link" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website">God Understands</a>
         <a class="asm-super-menu__link" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website">Hero Squad</a>
         <a class="asm-super-menu__link" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website">Journey of a Military Wife</a>
@@ -436,9 +436,18 @@ class Supermenu extends HTMLElement {
         const asm_default = this.shadowRoot.querySelector('[data-id=asm]');
         const donate_btn = this.shadowRoot.querySelector('.give-btn');
         const give_menu = this.shadowRoot.querySelector('#give-menu');
+        const navLinks = this.shadowRoot.querySelectorAll('.asm-super-menu__nav.desktop a.asm-super-menu__link');
+        const navLogos = this.shadowRoot.querySelectorAll('.asm-super-menu__nav.desktop a.asm-super-menu__link span');
         switch (this.getAttribute('site')) {
             case 'asm':
-                asm.classList.add('active');
+              navLinks.forEach(link => {
+                link.style.marginTop = '10px';
+                link.style.filter = 'none';
+              });
+              navLogos.forEach(logo => {
+                logo.style.clipPath = 'none';
+                logo.style.backgroundColor = 'none';
+              });
                 donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home');
                 break;
             case 'jmw':
