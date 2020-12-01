@@ -19,18 +19,18 @@ template.innerHTML = `
     </div>
     <div class="asm-super-menu__nav desktop">
         <a class="asm-super-menu__link logo-asm" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website" alt="Armed Services Ministry Website"><span></span></a>
-        <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span></span></a>
-        <a class="asm-super-menu__link logo-hs" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website" alt="Hero Squad Website"><span></span></a>
-        <a class="asm-super-menu__link logo-gu" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website" alt="God Understands Website" ><span></span></a>
         <a class="asm-super-menu__link logo-mbc" data-id="mbc" href="https://www.militarybiblechallenge.net" title="Military Bible Challenge Website" alt="Military Bible Challenge Website"><span></span></a>
+        <a class="asm-super-menu__link logo-gu" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website" alt="God Understands Website" ><span></span></a>
+        <a class="asm-super-menu__link logo-hs" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website" alt="Hero Squad Website"><span></span></a>
+        <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span></span></a>
         <a class="asm-super-menu__link logo-na" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website" alt="Never Alone Website"><span></span></a>
     </div>
     <div class="asm-super-menu__nav  mobile">
         <a class="asm-super-menu__link" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website">Armed Services Ministry</a>
-        <a class="asm-super-menu__link" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website">Journey of a Military Wife</a>
-        <a class="asm-super-menu__link" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website">Hero Squad</a>
-        <a class="asm-super-menu__link" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website">God Understands</a>
         <a class="asm-super-menu__link" data-id="mbc" href="https://www.militarybiblechallenge.net" title="Military Bible Challenge Website">Military Bible Challenge</a>
+        <a class="asm-super-menu__link" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website">God Understands</a>
+        <a class="asm-super-menu__link" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website">Hero Squad</a>
+        <a class="asm-super-menu__link" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website">Journey of a Military Wife</a>
         <a class="asm-super-menu__link" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website">NEVER ALONE</a>
     </div>
 </div>
@@ -41,7 +41,7 @@ template.innerHTML = `
 
 .asm-super-menu__link span {
   background-position: center center;
-  background-size: 80%;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 80px;
   display: block;
@@ -54,7 +54,20 @@ template.innerHTML = `
   -webkit-clip-path: polygon(0 100%, 50% 80%, 100% 100%, 100% 0, 0 0);
           clip-path: polygon(0 100%, 50% 80%, 100% 100%, 100% 0, 0 0);
   background-color: white;
-  height: 140px; }
+  height: 140px;
+  background-size: 80% !important;
+  background-position: top 30% center;
+ }
+ @media(min-width: 2000px){
+    .asm-super-menu__link.active span {
+        background-size: 70% !important;
+       }
+ }
+ @media(min-width: 2500px){
+    .asm-super-menu__link.active span {
+        background-size: 50% !important;
+       }
+ }
 
 .asm-super-menu__link.active {
   -webkit-filter: drop-shadow(0px 0px 4px #dcaf38);
