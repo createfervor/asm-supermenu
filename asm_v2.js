@@ -94,7 +94,6 @@ template.innerHTML = `
 
 .asm-super-menu__link.logo-asm {
   margin-right: auto;
-  padding-left: 0 !important;
   -webkit-transition: all .5s ease !important;
   -o-transition: all .5s ease !important;
   -moz-transition: all .5s ease !important;
@@ -107,8 +106,9 @@ template.innerHTML = `
             transform: scale(1.025);
     cursor: pointer; }
   .asm-super-menu__link.logo-asm span {
-    background-position: left center;
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_v2_ASM.png"); }
+    background-size: 50%;
+    background-position: center 30%;
+    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/logo_with_trim.png"); }
 
 .asm-super-menu__link.logo-jmw span {
   background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_JMW-grayscale.png"); }
@@ -440,14 +440,7 @@ class Supermenu extends HTMLElement {
         const navLogos = this.shadowRoot.querySelectorAll('.asm-super-menu__nav.desktop a.asm-super-menu__link span');
         switch (this.getAttribute('site')) {
             case 'asm':
-              navLinks.forEach(link => {
-                link.style.marginTop = '10px';
-                link.style.filter = 'none';
-              });
-              navLogos.forEach(logo => {
-                logo.style.clipPath = 'none';
-                logo.style.backgroundColor = 'none';
-              });
+                asm.classList.add('active');
                 donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home');
                 break;
             case 'jmw':
