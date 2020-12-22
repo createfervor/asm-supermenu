@@ -24,7 +24,7 @@ template.innerHTML = `
         <a class="asm-super-menu__link logo-hs" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website" alt="Hero Squad Website"><span></span></a>
         <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span></span></a>
         <a class="asm-super-menu__link logo-na" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website" alt="Never Alone Website"><span></span></a>
-        <!--<a class="asm-super-menu__link logo-or" data-id="or" href="https://operationrecon.org/" target="_blank" title="Operation Recon Website" alt="Operation Recon Website"><span></span></a>-->
+        <a class="asm-super-menu__link logo-or" data-id="or" href="https://operationrecon.org/" target="_blank" title="Operation Recon Website" alt="Operation Recon Website"><span></span></a>
     </div>
     <div class="asm-super-menu__nav  mobile">
         <a class="asm-super-menu__link" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website">Armed Services Ministry</a>
@@ -33,7 +33,7 @@ template.innerHTML = `
         <a class="asm-super-menu__link" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website">Hero Squad</a>
         <a class="asm-super-menu__link" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website">Journey of a Military Wife</a>
         <a class="asm-super-menu__link" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website">Never Alone</a>
-        <!--<a class="asm-super-menu__link" data-id="or" href="https://operationrecon.org/" target="_blank" title="Operation recon Website">Operation recon</a>-->
+        <a class="asm-super-menu__link" data-id="or" href="https://operationrecon.org/" target="_blank" title="Operation recon Website">Operation recon</a>
     </div>
 </div>
 <style>
@@ -111,55 +111,12 @@ template.innerHTML = `
     background-size: 50%;
     background-position: center 30%;
     background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/logo_with_trim.png"); }
-
-.asm-super-menu__link.logo-jmw span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_JMW-grayscale.png"); }
-  .asm-super-menu__link.logo-jmw span:hover {
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_JMW.png"); }
-
-.asm-super-menu__link.logo-jmw.active span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_JMW.png"); }
-
-.asm-super-menu__link.logo-gu span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_GU-grayscale.png"); }
-  .asm-super-menu__link.logo-gu span:hover {
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_GU.png"); }
-
-.asm-super-menu__link.logo-gu.active span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_GU.png"); }
-
-.asm-super-menu__link.logo-hs span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_HS-grayscale.png"); }
-  .asm-super-menu__link.logo-hs span:hover {
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_HS.png"); }
-
-.asm-super-menu__link.logo-hs.active span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_HS.png"); }
-
-.asm-super-menu__link.logo-mbc span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_MBC-grayscale.png"); }
-  .asm-super-menu__link.logo-mbc span:hover, .asm-super-menu__link.logo-mbc span.active {
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_MBC.png"); }
-
-.asm-super-menu__link.logo-mbc.active span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_MBC.png"); }
-
-.asm-super-menu__link.logo-na span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_NA-grayscale.png"); }
-  .asm-super-menu__link.logo-na span:hover {
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_NA.png"); }
-
-.asm-super-menu__link.logo-na.active span {
-  background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_NA.png"); }
-
-  .asm-super-menu__link.logo-or span {
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_OR-grayscale.png"); }
-    .asm-super-menu__link.logo-or span:hover {
-      background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_OR.png"); }
-  
-  .asm-super-menu__link.logo-or.active span {
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_OR.png"); }
-
+.asm-super-menu__link.logo-jmw span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_JMW.png"); }
+.asm-super-menu__link.logo-gu span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_GU.png"); }
+.asm-super-menu__link.logo-hs span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_HS.png"); }
+.asm-super-menu__link.logo-mbc span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_MBC.png"); }
+.asm-super-menu__link.logo-na span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_NA.png"); }
+.asm-super-menu__link.logo-or span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_OR.png"); }
 .asm-super-menu__nav.desktop .asm-super-menu__link {
   height: 110px;
   width: 10%;
@@ -475,10 +432,10 @@ class Supermenu extends HTMLElement {
                 na.classList.add('active');
                 donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_NeverAlone');
                 break;
-            // case 'or':
-            //     or.classList.add('active');
-            //     donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_OpRecon');
-            //     break;
+            case 'or':
+                or.classList.add('active');
+                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_OpRecon');
+                break;
             default:
                 asm_default.classList.add('active');
                 donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home');
