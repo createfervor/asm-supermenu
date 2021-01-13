@@ -25,6 +25,7 @@ template.innerHTML = `
         <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span></span></a>
         <a class="asm-super-menu__link logo-na" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website" alt="Never Alone Website"><span></span></a>
         <a class="asm-super-menu__link logo-or" data-id="or" href="https://operationrecon.org/" target="_blank" title="Operation Recon Website" alt="Operation Recon Website"><span></span></a>
+        <a class="asm-super-menu__link logo-wsb" data-id="wsb" href="https://warfighterstudybible.org/" target="_blank" title="Warfighter's Study Bible Website" alt="Warfighter's Study Bible Website"><span></span></a>
     </div>
     <div class="asm-super-menu__nav  mobile">
         <a class="asm-super-menu__link" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website">Armed Services Ministry</a>
@@ -34,6 +35,7 @@ template.innerHTML = `
         <a class="asm-super-menu__link" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website">Journey of a Military Wife</a>
         <a class="asm-super-menu__link" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website">Never Alone</a>
         <a class="asm-super-menu__link" data-id="or" href="https://operationrecon.org/" target="_blank" title="Operation recon Website">Operation recon</a>
+        <a class="asm-super-menu__link" data-id="or" href="https://warfighterstudybible.org/" target="_blank" title="Warfighter's Study Bible Website">Warfighter's Study Bible</a>
     </div>
 </div>
 <style>
@@ -117,6 +119,7 @@ template.innerHTML = `
 .asm-super-menu__link.logo-mbc span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_MBC.png"); }
 .asm-super-menu__link.logo-na span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_NA.png"); }
 .asm-super-menu__link.logo-or span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_OR.png"); }
+.asm-super-menu__link.logo-wsb span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/01/ASM-Warfighters-Study-Bible-Logo-Full-Color.png"); }
 .asm-super-menu__nav.desktop .asm-super-menu__link {
   height: 110px;
   width: 10%;
@@ -401,6 +404,7 @@ class Supermenu extends HTMLElement {
         const gu = this.shadowRoot.querySelector('[data-id=gu]');
         const na = this.shadowRoot.querySelector('[data-id=na]');
         const or = this.shadowRoot.querySelector('[data-id=or]');
+        const wsb = this.shadowRoot.querySelector('[data-id=wsb]');
         const asm_default = this.shadowRoot.querySelector('[data-id=asm]');
         const donate_btn = this.shadowRoot.querySelector('.give-btn');
         const give_menu = this.shadowRoot.querySelector('#give-menu');
@@ -435,6 +439,10 @@ class Supermenu extends HTMLElement {
             case 'or':
                 or.classList.add('active');
                 donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_OpRecon');
+                break;
+            case 'wsb':
+                wsb.classList.add('active');
+                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home');
                 break;
             default:
                 asm_default.classList.add('active');
