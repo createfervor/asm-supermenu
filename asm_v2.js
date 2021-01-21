@@ -442,7 +442,7 @@ class Supermenu extends HTMLElement {
                 break;
             case 'wsb':
                 wsb.classList.add('active');
-                donate_btn.setAttribute('href', ' https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_StudyBible');
+                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_StudyBible');
                 break;
             default:
                 asm_default.classList.add('active');
