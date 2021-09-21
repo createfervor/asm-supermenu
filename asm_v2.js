@@ -18,14 +18,14 @@ template.innerHTML = `
         </a>
     </div>
     <div class="asm-super-menu__nav desktop">
-        <a class="asm-super-menu__link logo-asm" data-id="asm" href="https://armedservicesministry.org/" target="_blank" rel="noopener" title="Armed Services Ministry Website" alt="Armed Services Ministry Website"><span class="sr-only">Armed Services Ministry Website</span></a>
-        <a class="asm-super-menu__link logo-mbc" data-id="mbc" href="https://www.militarybiblechallenge.net" target="_blank" rel="noopener" title="Military Bible Challenge Website" alt="Military Bible Challenge Website"><span class="sr-only">Military Bible Challenge Website</span></a>
-        <a class="asm-super-menu__link logo-gu" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" rel="noopener" title="God Understands Website" alt="God Understands Website" ><span class="sr-only">God Understands Website</span></a>
-        <a class="asm-super-menu__link logo-hs" data-id="hs" href="https://myherosquad.org/" target="_blank" rel="noopener" title="Hero Squad Website" alt="Hero Squad Website"><span class="sr-only">Hero Squad Website</span></a>
-        <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" rel="noopener" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span class="sr-only">Journey of a Military Wife Website</span></a>
-        <a class="asm-super-menu__link logo-na" data-id="na" href="https://neveralonemilitary.com/" target="_blank" rel="noopener" title="Never Alone Website" alt="Never Alone Website"><span class="sr-only">Never Alone Website</span></a>
-        <a class="asm-super-menu__link logo-or" data-id="or" href="https://operationrecon.org/" target="_blank" rel="noopener" title="Operation Recon Website" alt="Operation Recon Website"><span class="sr-only">Operation Recon Website</span></a>
-        <a class="asm-super-menu__link logo-wsb" data-id="wsb" href="https://warfighterstudybible.org/" target="_blank" rel="noopener" title="Warfighter's Study Bible Website" alt="Warfighter's Study Bible Website"><span class="sr-only">Warfighter's Study Bible Website</span></a>
+        <a class="asm-super-menu__link logo-asm" data-id="asm" href="https://armedservicesministry.org/" target="_blank" rel="noopener" title="Armed Services Ministry Website" alt="Armed Services Ministry Website"><span class="logo"></span><span class="sr-only">Armed Services Ministry Website</span></a>
+        <a class="asm-super-menu__link logo-mbc" data-id="mbc" href="https://www.militarybiblechallenge.net" target="_blank" rel="noopener" title="Military Bible Challenge Website" alt="Military Bible Challenge Website"><span class="logo"></span><span class="sr-only">Military Bible Challenge Website</span></a>
+        <a class="asm-super-menu__link logo-gu" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" rel="noopener" title="God Understands Website" alt="God Understands Website" ><span class="logo"></span><span class="sr-only">God Understands Website</span></a>
+        <a class="asm-super-menu__link logo-hs" data-id="hs" href="https://myherosquad.org/" target="_blank" rel="noopener" title="Hero Squad Website" alt="Hero Squad Website"><span class="logo"></span><span class="sr-only">Hero Squad Website</span></a>
+        <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" rel="noopener" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span class="logo"></span><span class="sr-only">Journey of a Military Wife Website</span></a>
+        <a class="asm-super-menu__link logo-na" data-id="na" href="https://neveralonemilitary.com/" target="_blank" rel="noopener" title="Never Alone Website" alt="Never Alone Website"><span class="logo"></span><span class="sr-only">Never Alone Website</span></a>
+        <a class="asm-super-menu__link logo-or" data-id="or" href="https://operationrecon.org/" target="_blank" rel="noopener" title="Operation Recon Website" alt="Operation Recon Website"><span class="logo"></span><span class="sr-only">Operation Recon Website</span></a>
+        <a class="asm-super-menu__link logo-wsb" data-id="wsb" href="https://warfighterstudybible.org/" target="_blank" rel="noopener" title="Warfighter's Study Bible Website" alt="Warfighter's Study Bible Website"><span class="logo"></span><span class="sr-only">Warfighter's Study Bible Website</span></a>
     </div>
     <div class="asm-super-menu__nav  mobile">
         <a class="asm-super-menu__link" data-id="asm" href="https://armedservicesministry.org/" target="_blank" rel="noopener" title="Armed Services Ministry Website">Armed Services Ministry</a>
@@ -55,7 +55,7 @@ template.innerHTML = `
     width: 1px !important;
     white-space: nowrap !important;            /* 3 */
   }
-.asm-super-menu__link span {
+.asm-super-menu__link span.logo {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
