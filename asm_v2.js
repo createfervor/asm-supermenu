@@ -1,9 +1,9 @@
 // Create Template
-const template = document.createElement('template');
+const template = document.createElement('template')
 template.innerHTML = `
 <div id="give-menu">
-        <a href="https://americanbible.org/" target="_blank" class="abs-logo"><img src="https://1s712.americanbible.org/global/_ABSLogo/White/PNG/abs-bible-mark-(white).png"></a>
-        <a href="" target="_blank" class="give-btn">GIVE NOW <i class="arrow right"></i><i class="arrow right"></i></a>
+        <a href="https://americanbible.org/" target="_blank" rel="noopener" class="abs-logo"><img src="https://1s712.americanbible.org/global/_ABSLogo/White/PNG/abs-bible-mark-(white).png"></a>
+        <a href="" target="_blank" rel="noopener" class="give-btn">GIVE NOW <i class="arrow right"></i><i class="arrow right"></i></a>
 </div>
 
 <div id="asm-super-menu" style="background: #ebe6e4;">
@@ -18,24 +18,24 @@ template.innerHTML = `
         </a>
     </div>
     <div class="asm-super-menu__nav desktop">
-        <a class="asm-super-menu__link logo-asm" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website" alt="Armed Services Ministry Website"><span></span></a>
-        <a class="asm-super-menu__link logo-mbc" data-id="mbc" href="https://www.militarybiblechallenge.net" target="_blank" title="Military Bible Challenge Website" alt="Military Bible Challenge Website"><span></span></a>
-        <a class="asm-super-menu__link logo-gu" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website" alt="God Understands Website" ><span></span></a>
-        <a class="asm-super-menu__link logo-hs" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website" alt="Hero Squad Website"><span></span></a>
-        <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span></span></a>
-        <a class="asm-super-menu__link logo-na" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website" alt="Never Alone Website"><span></span></a>
-        <a class="asm-super-menu__link logo-or" data-id="or" href="https://operationrecon.org/" target="_blank" title="Operation Recon Website" alt="Operation Recon Website"><span></span></a>
-        <a class="asm-super-menu__link logo-wsb" data-id="wsb" href="https://warfighterstudybible.org/" target="_blank" title="Warfighter's Study Bible Website" alt="Warfighter's Study Bible Website"><span></span></a>
+        <a class="asm-super-menu__link logo-asm" data-id="asm" href="https://armedservicesministry.org/" target="_blank" rel="noopener" title="Armed Services Ministry Website" alt="Armed Services Ministry Website"><span></span></a>
+        <a class="asm-super-menu__link logo-mbc" data-id="mbc" href="https://www.militarybiblechallenge.net" target="_blank" rel="noopener" title="Military Bible Challenge Website" alt="Military Bible Challenge Website"><span></span></a>
+        <a class="asm-super-menu__link logo-gu" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" rel="noopener" title="God Understands Website" alt="God Understands Website" ><span></span></a>
+        <a class="asm-super-menu__link logo-hs" data-id="hs" href="https://myherosquad.org/" target="_blank" rel="noopener" title="Hero Squad Website" alt="Hero Squad Website"><span></span></a>
+        <a class="asm-super-menu__link logo-jmw" data-id="jmw" href="https://militaryjourneys.com" target="_blank" rel="noopener" title="Journey of a Military Wife Website" alt="Journey of a Military Wife Website"><span></span></a>
+        <a class="asm-super-menu__link logo-na" data-id="na" href="https://neveralonemilitary.com/" target="_blank" rel="noopener" title="Never Alone Website" alt="Never Alone Website"><span></span></a>
+        <a class="asm-super-menu__link logo-or" data-id="or" href="https://operationrecon.org/" target="_blank" rel="noopener" title="Operation Recon Website" alt="Operation Recon Website"><span></span></a>
+        <a class="asm-super-menu__link logo-wsb" data-id="wsb" href="https://warfighterstudybible.org/" target="_blank" rel="noopener" title="Warfighter's Study Bible Website" alt="Warfighter's Study Bible Website"><span></span></a>
     </div>
     <div class="asm-super-menu__nav  mobile">
-        <a class="asm-super-menu__link" data-id="asm" href="https://armedservicesministry.org/" target="_blank" title="Armed Services Ministry Website">Armed Services Ministry</a>
-        <a class="asm-super-menu__link" data-id="mbc" href="https://www.militarybiblechallenge.net" target="_blank" title="Military Bible Challenge Website">Military Bible Challenge</a>
-        <a class="asm-super-menu__link" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" title="God Understands Website">God Understands</a>
-        <a class="asm-super-menu__link" data-id="hs" href="https://myherosquad.org/" target="_blank" title="Hero Squad Website">Hero Squad</a>
-        <a class="asm-super-menu__link" data-id="jmw" href="https://militaryjourneys.com" target="_blank" title="Journey of a Military Wife Website">Journey of a Military Wife</a>
-        <a class="asm-super-menu__link" data-id="na" href="https://neveralonemilitary.com/" target="_blank" title="Never Alone Website">Never Alone</a>
-        <a class="asm-super-menu__link" data-id="or" href="https://operationrecon.org/" target="_blank" title="Operation recon Website">Operation recon</a>
-        <a class="asm-super-menu__link" data-id="or" href="https://warfighterstudybible.org/" target="_blank" title="Warfighter's Study Bible Website">Warfighter's Study Bible</a>
+        <a class="asm-super-menu__link" data-id="asm" href="https://armedservicesministry.org/" target="_blank" rel="noopener" title="Armed Services Ministry Website">Armed Services Ministry</a>
+        <a class="asm-super-menu__link" data-id="mbc" href="https://www.militarybiblechallenge.net" target="_blank" rel="noopener" title="Military Bible Challenge Website">Military Bible Challenge</a>
+        <a class="asm-super-menu__link" data-id="gu" href="https://www.godunderstandsmilitary.com/" target="_blank" rel="noopener" title="God Understands Website">God Understands</a>
+        <a class="asm-super-menu__link" data-id="hs" href="https://myherosquad.org/" target="_blank" rel="noopener" title="Hero Squad Website">Hero Squad</a>
+        <a class="asm-super-menu__link" data-id="jmw" href="https://militaryjourneys.com" target="_blank" rel="noopener" title="Journey of a Military Wife Website">Journey of a Military Wife</a>
+        <a class="asm-super-menu__link" data-id="na" href="https://neveralonemilitary.com/" target="_blank" rel="noopener" title="Never Alone Website">Never Alone</a>
+        <a class="asm-super-menu__link" data-id="or" href="https://operationrecon.org/" target="_blank" rel="noopener" title="Operation recon Website">Operation recon</a>
+        <a class="asm-super-menu__link" data-id="or" href="https://warfighterstudybible.org/" target="_blank" rel="noopener" title="Warfighter's Study Bible Website">Warfighter's Study Bible</a>
     </div>
 </div>
 <style>
@@ -357,99 +357,136 @@ template.innerHTML = `
     height: 36px; } }
 </style>
 
-`;
+`
 // Initialize web component
 class Supermenu extends HTMLElement {
-    constructor(){
-        super();
-        this.attachShadow({mode: 'open'});
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
-    }
-    // Define callback functions to handle elements
-    dropnav(expandState) {
-        const link = this.shadowRoot.querySelector('.asm-super-menu__nav.mobile');
-        const closenav = this.shadowRoot.querySelector('#asm-super-menu #mbnavclose');
-        const shownav = this.shadowRoot.querySelector('#asm-super-menu #showmbnav');
+	constructor() {
+		super()
+		this.attachShadow({ mode: 'open' })
+		this.shadowRoot.appendChild(template.content.cloneNode(true))
+	}
+	// Define callback functions to handle elements
+	dropnav(expandState) {
+		const link = this.shadowRoot.querySelector('.asm-super-menu__nav.mobile')
+		const closenav = this.shadowRoot.querySelector(
+			'#asm-super-menu #mbnavclose'
+		)
+		const shownav = this.shadowRoot.querySelector('#asm-super-menu #showmbnav')
 
-        if(expandState == true) {
-            link.style.display = 'flex';
-            link.style.opacity = '1';
-            closenav.style.display = 'inline-flex';
-            shownav.style.display = 'none';
-        }
-        if(expandState == false) {
-            link.style.display = 'none';
-            link.style.opacity = '0';
-            closenav.style.display = 'none';
-            shownav.style.display = 'inline-flex';
-        }
-    }
-    // Define auto-load functions
-    connectedCallback(){
-        // Listen for mobile menu interaction
-        this.shadowRoot.querySelector('#showmbnav').addEventListener('click', ()=>{
-            this.dropnav(true);
-        })
-        this.shadowRoot.querySelector('#mbnavclose').addEventListener('click', ()=>{
-            this.dropnav(false);
-        })
-        // if no site is specified, default to ASM 	
-        if (!this.hasAttribute('site')) {
-            this.setAttribute('site', 'asm');
-        }
-        const asm = this.shadowRoot.querySelector('[data-id=asm]');
-        const jmw = this.shadowRoot.querySelector('[data-id=jmw]');
-        const hs = this.shadowRoot.querySelector('[data-id=hs]');
-        const mbc = this.shadowRoot.querySelector('[data-id=mbc]');
-        const gu = this.shadowRoot.querySelector('[data-id=gu]');
-        const na = this.shadowRoot.querySelector('[data-id=na]');
-        const or = this.shadowRoot.querySelector('[data-id=or]');
-        const wsb = this.shadowRoot.querySelector('[data-id=wsb]');
-        const asm_default = this.shadowRoot.querySelector('[data-id=asm]');
-        const donate_btn = this.shadowRoot.querySelector('.give-btn');
-        const give_menu = this.shadowRoot.querySelector('#give-menu');
-        const navLinks = this.shadowRoot.querySelectorAll('.asm-super-menu__nav.desktop a.asm-super-menu__link');
-        const navLogos = this.shadowRoot.querySelectorAll('.asm-super-menu__nav.desktop a.asm-super-menu__link span');
-        switch (this.getAttribute('site')) {
-            case 'asm':
-                asm.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home');
-                break;
-            case 'jmw':
-                jmw.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_JMW');
-                break;
-            case 'hs':
-                hs.classList.add('active');
-                donate_btn.setAttribute('href', 'https://myherosquad.org/donate/?banner=ABS2020-10-001-ASM&pid=1001&des=582a68bf-9f56-4403-aaaf-c57d286b31b4&Source=ASM_HShome');
-                give_menu.style.display = 'none';
-                break;
-            case 'mbc':
-                mbc.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_MilitaryChallenge');
-                break;
-            case 'gu':
-                gu.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_GodUnderstands');
-                break;
-            case 'na':
-                na.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_NeverAlone');
-                break;
-            case 'or':
-                or.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_OpRecon');
-                break;
-            case 'wsb':
-                wsb.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_StudyBible');
-                break;
-            default:
-                asm_default.classList.add('active');
-                donate_btn.setAttribute('href', 'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home');
-                break;
-        }
-    }
+		if (expandState == true) {
+			link.style.display = 'flex'
+			link.style.opacity = '1'
+			closenav.style.display = 'inline-flex'
+			shownav.style.display = 'none'
+		}
+		if (expandState == false) {
+			link.style.display = 'none'
+			link.style.opacity = '0'
+			closenav.style.display = 'none'
+			shownav.style.display = 'inline-flex'
+		}
+	}
+	// Define auto-load functions
+	connectedCallback() {
+		// Listen for mobile menu interaction
+		this.shadowRoot
+			.querySelector('#showmbnav')
+			.addEventListener('click', () => {
+				this.dropnav(true)
+			})
+		this.shadowRoot
+			.querySelector('#mbnavclose')
+			.addEventListener('click', () => {
+				this.dropnav(false)
+			})
+		// if no site is specified, default to ASM
+		if (!this.hasAttribute('site')) {
+			this.setAttribute('site', 'asm')
+		}
+		const asm = this.shadowRoot.querySelector('[data-id=asm]')
+		const jmw = this.shadowRoot.querySelector('[data-id=jmw]')
+		const hs = this.shadowRoot.querySelector('[data-id=hs]')
+		const mbc = this.shadowRoot.querySelector('[data-id=mbc]')
+		const gu = this.shadowRoot.querySelector('[data-id=gu]')
+		const na = this.shadowRoot.querySelector('[data-id=na]')
+		const or = this.shadowRoot.querySelector('[data-id=or]')
+		const wsb = this.shadowRoot.querySelector('[data-id=wsb]')
+		const asm_default = this.shadowRoot.querySelector('[data-id=asm]')
+		const donate_btn = this.shadowRoot.querySelector('.give-btn')
+		const give_menu = this.shadowRoot.querySelector('#give-menu')
+		const navLinks = this.shadowRoot.querySelectorAll(
+			'.asm-super-menu__nav.desktop a.asm-super-menu__link'
+		)
+		const navLogos = this.shadowRoot.querySelectorAll(
+			'.asm-super-menu__nav.desktop a.asm-super-menu__link span'
+		)
+		switch (this.getAttribute('site')) {
+			case 'asm':
+				asm.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home'
+				)
+				break
+			case 'jmw':
+				jmw.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_JMW'
+				)
+				break
+			case 'hs':
+				hs.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://myherosquad.org/donate/?banner=ABS2020-10-001-ASM&pid=1001&des=582a68bf-9f56-4403-aaaf-c57d286b31b4&Source=ASM_HShome'
+				)
+				give_menu.style.display = 'none'
+				break
+			case 'mbc':
+				mbc.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_MilitaryChallenge'
+				)
+				break
+			case 'gu':
+				gu.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_GodUnderstands'
+				)
+				break
+			case 'na':
+				na.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_NeverAlone'
+				)
+				break
+			case 'or':
+				or.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_OpRecon'
+				)
+				break
+			case 'wsb':
+				wsb.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_StudyBible'
+				)
+				break
+			default:
+				asm_default.classList.add('active')
+				donate_btn.setAttribute(
+					'href',
+					'https://armedservicesministry.org/donate/?banner=ABS2020-02-001-ASM&pid=250&des=868df86e-da35-471e-8e34-4be034af9d95&source=ASM_Home'
+				)
+				break
+		}
+	}
 }
 // Register template to HTML dom
-window.customElements.define('asm-supermenu', Supermenu);
+window.customElements.define('asm-supermenu', Supermenu)
