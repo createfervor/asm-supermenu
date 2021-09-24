@@ -59,7 +59,7 @@ template.innerHTML = `
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 80px;
+  height: 60px;
   display: block;
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
@@ -124,14 +124,14 @@ template.innerHTML = `
   .asm-super-menu__link.logo-asm span {
     background-size: 50%;
     background-position: center 30%;
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/logo_with_trim.png"); }
-.asm-super-menu__link.logo-jmw span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_JMW.png"); }
-.asm-super-menu__link.logo-gu span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_GU.png"); }
-.asm-super-menu__link.logo-hs span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_HS.png"); }
-.asm-super-menu__link.logo-mbc span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_MBC.png"); }
-.asm-super-menu__link.logo-na span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_NA.png"); }
-.asm-super-menu__link.logo-or span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2020/12/ASM_SuperMenu_OR.png"); }
-.asm-super-menu__link.logo-wsb span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/01/ASM-Warfighters-Study-Bible-Logo-Full-Color.png"); }
+    background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/ASM.svg"); }
+.asm-super-menu__link.logo-jmw span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/JMW.png"); }
+.asm-super-menu__link.logo-gu span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/GU_alt1.png"); }
+.asm-super-menu__link.logo-hs span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/HS.svg"); }
+.asm-super-menu__link.logo-mbc span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/MBC.png"); }
+.asm-super-menu__link.logo-na span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/NA.svg"); }
+.asm-super-menu__link.logo-or span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/OR.svg"); }
+.asm-super-menu__link.logo-wsb span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/WSB.svg"); }
 .asm-super-menu__nav.desktop .asm-super-menu__link {
   height: 110px;
   width: 10%;
@@ -141,7 +141,6 @@ template.innerHTML = `
   transition: all 1s ease-in-out;
   cursor: pointer;
   padding: 10px;
-  padding-top: 0 !important;
   margin-top: -10px; }
 
 #give-menu {
