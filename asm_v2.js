@@ -122,7 +122,7 @@ template.innerHTML = `
             transform: scale(1.025);
     cursor: pointer; }
   .asm-super-menu__link.logo-asm span {
-    background-size: 50%;
+    background-size: contain;
     background-position: center 30%;
     background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/ASM_v2.svg"); }
 .asm-super-menu__link.logo-jmw span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/JMW.png"); }
