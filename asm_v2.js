@@ -124,7 +124,7 @@ template.innerHTML = `
   .asm-super-menu__link.logo-asm span {
     background-size: 50%;
     background-position: center 30%;
-    background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/ASM.svg"); }
+    background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/ASM_v2.svg"); }
 .asm-super-menu__link.logo-jmw span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/JMW.png"); }
 .asm-super-menu__link.logo-gu span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/GU_alt1.png"); }
 .asm-super-menu__link.logo-hs span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/HS.svg"); }
