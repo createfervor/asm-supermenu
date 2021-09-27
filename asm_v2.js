@@ -66,14 +66,6 @@ template.innerHTML = `
   -moz-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out; }
 
-.asm-super-menu__link.active span {
-  -webkit-clip-path: polygon(0 100%, 50% 80%, 100% 100%, 100% 0, 0 0);
-          clip-path: polygon(0 100%, 50% 80%, 100% 100%, 100% 0, 0 0);
-  background-color: white;
-  height: 140px;
-  background-size: 80% !important;
-  background-position: top 30% center;
- }
  @media(min-width: 2000px){
     .asm-super-menu__link.active span {
         background-size: 70% !important;
@@ -121,17 +113,18 @@ template.innerHTML = `
          -o-transform: scale(1.025);
             transform: scale(1.025);
     cursor: pointer; }
-  .asm-super-menu__link.logo-asm span {
+  .asm-super-menu__link.logo-asm .logo {
+    height:80px;
     background-size: contain;
     background-position: center 30%;
     background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/ASM_v2.svg"); }
-.asm-super-menu__link.logo-jmw span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/JMW.png"); }
-.asm-super-menu__link.logo-gu span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/GU_alt1.png"); }
-.asm-super-menu__link.logo-hs span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/HS.svg"); }
-.asm-super-menu__link.logo-mbc span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/MBC.png"); }
-.asm-super-menu__link.logo-na span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/NA.svg"); }
-.asm-super-menu__link.logo-or span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/OR.svg"); }
-.asm-super-menu__link.logo-wsb span { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/WSB.svg"); }
+.asm-super-menu__link.logo-jmw .logo { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/JMW.png"); }
+.asm-super-menu__link.logo-gu .logo { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/GU_alt1.png"); }
+.asm-super-menu__link.logo-hs .logo { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/HS.svg"); }
+.asm-super-menu__link.logo-mbc .logo { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/MBC.png"); }
+.asm-super-menu__link.logo-na .logo { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/NA.svg"); }
+.asm-super-menu__link.logo-or .logo { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/OR.svg"); }
+.asm-super-menu__link.logo-wsb .logo { background-image: url("https://armedservicesministry.org/wp-content/uploads/2021/09/WSB.svg"); }
 .asm-super-menu__nav.desktop .asm-super-menu__link {
   height: 110px;
   width: 10%;
@@ -142,7 +135,15 @@ template.innerHTML = `
   cursor: pointer;
   padding: 10px;
   margin-top: -10px; }
-
+.asm-super-menu__nav.desktop .asm-super-menu__link.logo-asm {margin-top: -30px;}
+  .asm-super-menu__link.active .logo {
+    -webkit-clip-path: polygon(0 100%, 50% 80%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 50% 80%, 100% 100%, 100% 0, 0 0);
+    background-color: white;
+    height: 140px;
+    background-size: 80% !important;
+    background-position: top 30% center;
+   }
 #give-menu {
   background: #002c47;
   height: 27px;
