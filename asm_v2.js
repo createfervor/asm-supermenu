@@ -217,6 +217,11 @@ template.innerHTML = `
 .asm-super-menu__nav.mobile {
   display: none; }
 
+.asm-super-menu__nav.mobile.closed, .asm-super-menu__nav.mobile.open {
+  display: none;
+  opacity: 0;
+}
+
 .asm-super-menu__nav.mobile .asm-super-menu__link, .asm-super-menu__controls a {
   height: 35px;
   font-size: 15px;
@@ -347,6 +352,10 @@ template.innerHTML = `
     transition: all ease-in-out .5s; }
   .asm-super-menu__nav.desktop {
     display: none; }
+  .asm-super-menu__nav.mobile.open {
+    display: flex;
+    opacity: 1;
+  }
   .asm-super-menu__controls {
     display: -webkit-box;
     display: -webkit-flex;
@@ -386,14 +395,14 @@ class Supermenu extends HTMLElement {
 		const shownav = this.shadowRoot.querySelector('#asm-super-menu #showmbnav')
 
 		if (expandState == true) {
-			link.style.display = 'flex'
-			link.style.opacity = '1'
+      link.classList.add('open')
+      link.classList.remove('closed')
 			closenav.style.display = 'inline-flex'
 			shownav.style.display = 'none'
 		}
 		if (expandState == false) {
-			link.style.display = 'none'
-			link.style.opacity = '0'
+      link.classList.add('closed')
+      link.classList.remove('open')
 			closenav.style.display = 'none'
 			shownav.style.display = 'inline-flex'
 		}
